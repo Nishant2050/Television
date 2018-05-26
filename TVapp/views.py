@@ -24,8 +24,6 @@ class GenresRetrieveView(generics.RetrieveAPIView):
     def get_queryset(self):
         return Genre.objects.all()
 
-    # def get_serializer_context(self, *args, **kwargs):
-    #     return {"request": self.request}
 
 
 class ChannelsAPIView(generics.ListAPIView):
@@ -35,8 +33,6 @@ class ChannelsAPIView(generics.ListAPIView):
     def get_queryset(self):
         return Channel.objects.filter(genres__type_head=self.kwargs['type_head'])
 
-    # def get_serializer_context(self, *args, **kwargs):
-    #     return {"request": self.request}
 
 class ChannelRView(generics.RetrieveAPIView):
     lookup_field = 'title'

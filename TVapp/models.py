@@ -8,8 +8,6 @@ class Genre(models.Model):
     def __str__(self):
         return self.type_head
 
-    # def get_genre_url(self, request=None):
-    #     return reverse("api:genre", kwargs={'type_head': self.type_head}, request=request)
         
 
     
@@ -20,8 +18,6 @@ class Channel(models.Model):
     def __str__(self):
         return self.title
 
-    # def get_channel_url(self, request=None):
-    #     return reverse("api:channels", kwargs={'title': self.title}, request=request)
 
 class Show(models.Model):
     channels  = models.ForeignKey(Channel, related_name='chan', on_delete=models.CASCADE)

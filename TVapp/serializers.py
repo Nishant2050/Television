@@ -7,10 +7,6 @@ class GenreSerializers(serializers.ModelSerializer):
         model  = Genre
         fields = ['type_head',] 
     
-    # def get_url(self, obj):
-    #     request = self.context.get("request")
-    #     return obj.get_genre_url(request=request)
-
 
 
 class ChannelSerializers(serializers.ModelSerializer):
@@ -20,10 +16,7 @@ class ChannelSerializers(serializers.ModelSerializer):
         model  = Channel
         fields = ['genres','title',]
 
-    # def get_url(self, obj):
-    #     request = self.context.get("request")
-    #     return obj.get_channel_url(request=request)
-
+        
 
 class ShowSerializers(serializers.ModelSerializer):
     class Meta:

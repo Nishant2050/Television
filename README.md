@@ -1,4 +1,4 @@
-#Television(RESTful API)
+# Television(RESTful API)
 A Web API built using Django Rest framework. Which lists out different TV Shows under different channels. These Channels are again categorized under Different Genres like Knowledge, Entertainment, Kidz   etc.
 ## Lists of all Genres
 ![image](https://user-images.githubusercontent.com/38308057/40574564-f10a89ca-60f1-11e8-9889-fdebfc198291.png)
